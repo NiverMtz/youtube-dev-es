@@ -1,0 +1,277 @@
+/*
+    #0411c4 Azul
+    #E02009 Naranja Rojizo
+    #F54100 Naraja Fuerte
+    #E06102 Naranja medio
+    #
+*/
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0411c4;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/*Borde de la cabecera de la tabla*/
+table thead tr th{
+    border-bottom: 2px solid #ff9a0d80 ;
+}
+
+.container {
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;    
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    padding: 1.8em;
+    overflow-x: hidden;
+}
+
+.content{
+    padding: 1em;
+}
+td {
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0411c4;
+    text-align: left;
+    padding: 0.5em;
+}
+
+th {
+    display: none;
+}
+
+.actions {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    border-radius: 50%;
+    border: solid 3px white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    z-index: 2;
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    border-radius: 50%;
+    border: solid 3px white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.actions:hover{
+    background-color: #0411c4;   
+}
+
+.title {
+    text-transform: uppercase;
+    padding: 1em;
+    text-align: center;
+}
+
+.pos {
+    background-color: #0411c4;
+    color: white;
+    padding: 0.55em 1em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.title-item {
+    /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #0411c4;*/
+    border-bottom: solid 2px #0411c4; /*Shorthand property*/
+    padding-bottom: 0.7em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.main-image {
+    position: absolute;     
+    float: left;
+    margin: 1em;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.second-image {
+    /* position: absolute; */
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    height: 15em;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+/*Sección para agregarle un degradado a la imagen de fondo
+de los países, pero aún no está terminada*/
+
+/* .fondo-img {
+    background: -webkit-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background: -moz-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background: -ms-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background: -o-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background-repeat: no-repeat;
+    height: 10em;
+}
+
+.prueba {
+    background: -webkit-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background: -moz-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background: -ms-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background: -o-linear-gradient(black,transparent 75%),
+	url('../images/mexico.jpg'), white;
+	background-repeat: no-repeat;
+    height: 15em;
+} */
+
+.text {
+    position: relative;
+    z-index: 1;
+}
+
+.pais {
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th {
+    padding: 1em;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #ff9a0d80;
+}
+.goto-yt:hover {
+    opacity: 0.7;
+}
+
+.fa-star {
+    color: #E06102;
+}
+
+.fa-youtube {
+    font-size: 1.2em;
+    color: red;
+    margin-left: 1em;
+}
+
+.fa-list {
+    font-size: 2em;
+    padding: 0.4em;
+}
+
+.rt-list:hover{
+    color: white;
+}
+
+.goto {
+    padding: 10px;
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+@media (min-width:900px) {
+    th {
+        display: table-cell;
+    }
+    td {
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    
+    .content{
+        padding: 1.8em;
+    }
+}
+
+@media (min-height:550) {
+    .content {
+        height: 500px;
+    }
+}
+
+@media (max-width:600px) {
+    .content{
+        padding: 1em;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #0411c4;
+        text-align: left;
+        padding: 0.5em;
+    }
+
+    th {
+        display: none;
+    }
+
+    .actions {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        border-radius: 50%;
+        border: solid 3px white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .second-image {
+        width: 100%;
+    }
+}
