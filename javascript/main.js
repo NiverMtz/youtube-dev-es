@@ -15,7 +15,7 @@ boton.forEach(function(l){
         content.classList.add('animate__slideOutUp');
 
         setTimeout(function(){
-            location.href = "/";
+            location.href = "../index.html";
         }, 1100);
 
         return false;
